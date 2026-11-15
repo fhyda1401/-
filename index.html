@@ -80,4 +80,178 @@
         .company-info h2 { margin: 0; color: var(--primary); }
         .rating { color: #f59e0b; font-weight: bold; font-size: 1.1rem; }
         
-        .
+        .features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .features li::before {
+            content: "✔ ";
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .cta-box { text-align: center; }
+        .price { font-size: 1.8rem; font-weight: bold; color: var(--text); }
+        .price span { font-size: 0.9rem; color: #64748b; }
+        
+        .btn-affiliate {
+            display: block;
+            background: #10b981;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn-affiliate:hover { background: #059669; }
+
+        footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hosting-card { grid-template-columns: 1fr; text-align: center; }
+            .features ul { text-align: right; display: inline-block; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>أفضل شركات استضافة المواقع لعام 2026</h1>
+    <p>مقارنة شاملة ومحدثة لأسرع وأرخص الاستضافات السحابية المشتركة مع كوبونات خصم حصرية</p>
+</header>
+
+<div class="container">
+
+    <div class="ad-banner">
+        مساحة إعلانية (ضع كود إعلان Google AdSense الأفقي هنا)
+    </div>
+
+    <!-- 1. هوستنجر (الرابط الأول) -->
+    <div class="hosting-card">
+        <div class="company-info">
+            <span class="badge">الأفضل قيمة مقابل السعر</span>
+            <h2>Hostinger (هوستنجر)</h2>
+            <div class="rating">★★★★★ (9.8/10)</div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>دومين مجاني للسنة الأولى</li>
+                <li>شهادة أمان SSL مجانية غير محدودة</li>
+                <li>تخزين NVMe فائق السرعة</li>
+                <li>دعم فني متاح 24/7</li>
+            </ul>
+        </div>
+        <div class="cta-box">
+            <div class="price">$2.49 <span>/ شهرياً</span></div>
+            <a href="https://hostinger.com/reach/referrals?REFERRALCODE=YGWALGHTAARB" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="btn-affiliate">احصل على العرض الآن</a>
+        </div>
+    </div>
+
+    <!-- 2. بلوهوست -->
+    <div class="hosting-card">
+        <div class="company-info">
+            <span class="badge" style="background:#3b82f6;">الأفضل لووردبريس</span>
+            <h2>Bluehost (بلوهوست)</h2>
+            <div class="rating">★★★★☆ (9.4/10)</div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>موصى به رسمياً من WordPress</li>
+                <li>تثبيت ووردبريس بنقرة واحدة</li>
+                <li>شبكة توصيل محتوى CDN مجانية</li>
+                <li>ضمان استرداد الأموال 30 يوماً</li>
+            </ul>
+        </div>
+        <div class="cta-box">
+            <div class="price">$2.95 <span>/ شهرياً</span></div>
+            <a href="https://www.bluehost.com" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="btn-affiliate">زيارة الموقع الرسمي</a>
+        </div>
+    </div>
+
+    <!-- 3. سايت جراوند -->
+    <div class="hosting-card">
+        <div class="company-info">
+            <span class="badge" style="background:#ec4899;">الأعلى سرعة ودعماً</span>
+            <h2>SiteGround (سايت جراوند)</h2>
+            <div class="rating">★★★★★ (9.7/10)</div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>أداء خارق وسرعة استجابة مذهلة</li>
+                <li>حماية متقدمة ونسخ احتياطي يومي</li>
+                <li>نقل موقع مجاني بواسطة الخبراء</li>
+                <li>دعم فني استثنائي سريع جداً</li>
+            </ul>
+        </div>
+        <div class="cta-box">
+            <div class="price">$2.99 <span>/ شهرياً</span></div>
+            <a href="https://www.siteground.com" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="btn-affiliate">احصل على الاستضافة</a>
+        </div>
+    </div>
+
+    <!-- 4. كلاود وايز (الرابط الثاني) -->
+    <div class="hosting-card">
+        <div class="company-info">
+            <span class="badge" style="background:#8b5cf6;">الأقوى للمتاجر الكبرى</span>
+            <h2>Cloudways (كلاود وايز)</h2>
+            <div class="rating">★★★★★ (9.6/10)</div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>استضافة سحابية مُدارة بالكامل</li>
+                <li>اختيار السيرفر (DigitalOcean, AWS)</li>
+                <li>أداء وسرعة لا مثيل لها</li>
+                <li>نسخ احتياطي تلقائي يومي</li>
+            </ul>
+        </div>
+        <div class="cta-box">
+            <div class="price">$11.00 <span>/ شهرياً</span></div>
+            <a href="https://vrlps.co/cx11m9u/cp" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="btn-affiliate">ابدأ التجربة المجانية</a>
+        </div>
+    </div>
+
+    <!-- 5. نيم شيب -->
+    <div class="hosting-card">
+        <div class="company-info">
+            <span class="badge" style="background:#0284c7;">الأرخص للمبتدئين</span>
+            <h2>Namecheap (نيم شيب)</h2>
+            <div class="rating">★★★★☆ (9.1/10)</div>
+        </div>
+        <div class="features">
+            <ul>
+                <li>أسعار اقتصادية تبدأ من قيمة بسيطة</li>
+                <li>تخزين SSD سريع وموثوق</li>
+                <li>حماية خصوصية الدومين مجاناً</li>
+                <li>سهولة الإدارة للمبتدئين</li>
+            </ul>
+        </div>
+        <div class="cta-box">
+            <div class="price">$1.98 <span>/ شهرياً</span></div>
+            <a href="https://www.namecheap.com" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '_blank'); return false;" class="btn-affiliate">اشتري الآن</a>
+        </div>
+    </div>
+
+    <div class="ad-banner">
+        مساحة إعلانية (ضع كود إعلان Google AdSense مربع أو متجاوب هنا)
+    </div>
+
+</div>
+
+<footer>
+    <p>إخلاء مسؤولية: هذا الموقع يحتوي على روابط تسويق بالعمولة، قد نحصل على عمولة بسيطة عند شرائك من خلال روابطنا دون أي تكلفة إضافية عليك.</p>
+    <p>جميع الحقوق محفوظة &copy; 2026 | <a href="#" style="color:#fff;">سياسة الخصوصية</a> | <a href="#" style="color:#fff;">اتصل بنا</a></p>
+</footer>
+
+</body>
+</html>
